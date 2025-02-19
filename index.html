@@ -13,15 +13,51 @@
         <h1>Путеводитель по мировым музеям</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="museums.html">Музеи</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#museums">Музеи</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <p>Добро пожаловать на наш сайт! Здесь вы найдете информацию о лучших музеях мира.</p>
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Здесь вы найдете информацию о лучших музеях мира.</p>
+        </section>
+
+        <section id="museums">
+            <h2>Список музеев</h2>
+            <ul>
+                <li>
+                    <h3>какойто музей</h3>
+                    <p>описание.</p>
+                    <p><strong>Часы работы:</strong>9:00-21:00</p>
+                    <p>Фото музея</p>
+                    <img src="https://static.mk.ru/upload/entities/2020/08/30/06/articles/facebookPicture/fb/08/7b/3a/c15da92beb0a4a2a269fc90e6040e7cb.jpg" alt="Фотография музея №1">
+                </li>
+                <li>
+                    <h3>ещё какойто музей</h3>
+                    <p>описание</p>
+                    <p><strong>Часы работы:</strong>10:00-20:00</p>
+                    <p>Фото музея</p>
+                    <img src="https://cdn.culture.ru/images/30d79ac8-d2e9-58f2-99fd-3ddc73558163" alt="Фотография музея №2">
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <p>Email: muse45imail.ru</p>
+            <p>Телефон: +79345559992</p>
         </section>
     </main>
     <footer>
